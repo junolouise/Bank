@@ -23,4 +23,11 @@ describe BankAccount do
     subject.withdrawal(2)
     expect(subject.balance).to eq(8)
   end
+
+  it 'withdrawal multiple times and correctly minuses balance' do
+    subject.deposit(10)
+    subject.withdrawal(1)
+    subject.withdrawal(3)
+    expect(subject.balance).to eq(6)
+  end
 end
