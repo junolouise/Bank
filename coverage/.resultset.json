@@ -54,8 +54,19 @@
         3,
         null,
         null
+      ],
+      "/Users/student/Makers/bank/spec/print_statement_spec.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/student/Makers/bank/lib/print_statement.rb": [
+        null,
+        null,
+        1,
+        null
       ]
     },
-    "timestamp": 1582813313
+    "timestamp": 1582813663
   }
 }
