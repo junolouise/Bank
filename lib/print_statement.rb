@@ -10,4 +10,8 @@ class BankStatement
   def print_statement
     'date || credit || debit || balance'
   end
+
+  def add_to_transactions(transaction)
+    @transactions << transaction
+  end
 end
