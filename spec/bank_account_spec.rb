@@ -11,4 +11,16 @@ describe BankAccount do
     subject.deposit(1)
     expect(subject.balance).to eq(1)
   end
+
+  it 'deposits multiple times and correctly adds balance' do
+    subject.deposit(10)
+    subject.deposit(1)
+    expect(subject.balance).to eq(11)
+  end
+
+  it 'withdrawal by 1 decreases balance by 1' do
+    subject.deposit(10)
+    subject.withdrawal(2)
+    expect(subject.balance).to eq(8)
+  end
 end
