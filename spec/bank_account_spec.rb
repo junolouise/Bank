@@ -18,7 +18,7 @@ describe BankAccount do
     expect(subject.balance).to eq(11)
   end
 
-  it 'withdrawal by 1 decreases balance by 1' do
+  it 'withdrawal by 2 decreases balance by 2' do
     subject.deposit(10)
     subject.withdrawal(2)
     expect(subject.balance).to eq(8)
