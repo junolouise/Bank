@@ -12,6 +12,7 @@ class BankStatement
   end
 
   def add_to_transactions(transaction)
+    transaction[:time] = Time.new.strftime("%d/%m/%Y")
     @transactions << transaction
   end
 end

@@ -18,4 +18,12 @@ describe BankStatement do
       expect(subject.transactions.count).to eq(1)
     end
   end
+
+  it 'adds a transaction to history with the time/date' do
+    transaction = { credit: 50}
+    @timestamp = Time.now.strftime("%d/%m/%Y")
+    allow(Time).to receive(:now).and_return(@timestamp)
+    subject.add_to_transactions(transaction)
+    expect(subject.transactions).to include({time: @timestamp, credit: 50}) 
+  end
 end
