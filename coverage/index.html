@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-27T16:28:29+00:00">2020-02-27T16:28:29+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-27T17:38:24+00:00">2020-02-27T17:38:24+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -141,7 +141,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :balance, :transaction, :print_statement</code>
+          <code class="ruby">  attr_reader :balance, :transaction, :bank_statement</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -153,7 +153,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  def initialize(print_statement = PrintStatement.new)</code>
+          <code class="ruby">  def initialize(bank_statement = BankStatement.new)</code>
         </li>
       
         <li class="covered" data-hits="9" data-linenumber="7">
@@ -171,7 +171,7 @@
         <li class="covered" data-hits="9" data-linenumber="9">
           <span class="hits">9</span>
           
-          <code class="ruby">    @print_statement = print_statement</code>
+          <code class="ruby">    @bank_statement = bank_statement</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -304,7 +304,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">class PrintStatement</code>
+          <code class="ruby">class BankStatement</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
@@ -449,7 +449,7 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(subject.print_statement).to be_an_instance_of(PrintStatement)</code>
+          <code class="ruby">    expect(subject.bank_statement).to be_an_instance_of(BankStatement)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
@@ -792,7 +792,7 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">describe PrintStatement do</code>
+          <code class="ruby">describe BankStatement do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">

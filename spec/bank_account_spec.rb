@@ -8,7 +8,7 @@ describe BankAccount do
   end
 
   it 'has access to bank statement' do
-    expect(subject.print_statement).to be_an_instance_of(PrintStatement)
+    expect(subject.bank_statement).to be_an_instance_of(BankStatement)
   end
 
   describe '#deposit' do

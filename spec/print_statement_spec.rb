@@ -2,7 +2,7 @@
 
 require 'print_statement'
 
-describe PrintStatement do
+describe BankStatement do
   it 'contains no transactions upon initialization' do
     expect(subject.transactions).to be_empty
   end

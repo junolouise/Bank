@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class PrintStatement
+class BankStatement
   attr_reader :transactions
 
   def initialize
