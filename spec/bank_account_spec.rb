@@ -7,6 +7,10 @@ describe BankAccount do
     expect(subject.balance).to eq(0)
   end
 
+  it 'has access to bank statement' do
+    expect(subject.print_statement).to be_an_instance_of(PrintStatement)
+  end
+
   describe '#deposit' do
     it 'depositing 1 increases balance by 1' do
       subject.deposit(1)
