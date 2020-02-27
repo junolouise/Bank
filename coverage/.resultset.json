@@ -45,6 +45,14 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/student/Makers/bank/lib/bank_account.rb": [
@@ -53,20 +61,23 @@
         1,
         1,
         null,
+        1,
+        8,
+        8,
+        null,
         null,
         1,
-        7,
-        7,
-        null,
-        null,
-        1,
-        7,
-        7,
+        8,
+        8,
         null,
         null,
         1,
         4,
         4,
+        null,
+        null,
+        1,
+        1,
         null,
         null
       ],
@@ -101,6 +112,6 @@
         null
       ]
     },
-    "timestamp": 1582818959
+    "timestamp": 1582819385
   }
 }

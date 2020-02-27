@@ -20,7 +20,7 @@ describe BankAccount do
 
   it 'adds a transaction to @transaction when making a deposit' do
     subject.deposit(10)
-    expect(subject.transaction).to include({credit: 10, balance: 10})
+    expect(subject.transaction).to include({ credit: 10, balance: 10 })
   end
 
   it 'withdrawal by 2 decreases balance by 2' do
@@ -39,6 +39,14 @@ describe BankAccount do
   it 'adds a transaction to @transaction when making a withdrawal' do
     subject.deposit(20)
     subject.withdrawal(5)
-    expect(subject.transaction).to include({debit: 5, balance: 15})
+    expect(subject.transaction).to include({ debit: 5, balance: 15 })
+  end
+
+  describe '#add_transaction_to_statement' do
+    it 'adds each transaction to the statement' do
+      subject.deposit(50)
+      subject.add_transaction_to_statement
+      expect(subject.transaction).to be_empty
+    end
   end
 end
