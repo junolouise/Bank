@@ -1,20 +1,21 @@
 # frozen_string_literal: true
 
 class BankAccount
-  attr_reader :balance, :transactions
+  attr_reader :balance, :transaction
   
 
   def initialize
     @balance = 0
-    @transactions = []
+    @transaction = []
   end
 
   def deposit(amount)
     @balance += amount
-    @transactions << {credit: amount, balance: @balance}
+    @transaction << {credit: amount, balance: @balance}
   end
 
   def withdrawal(amount)
     @balance -= amount
+    @transaction << {debit: amount, balance: @balance}
   end
 end

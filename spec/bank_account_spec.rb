@@ -18,6 +18,11 @@ describe BankAccount do
     expect(subject.balance).to eq(11)
   end
 
+  it 'adds a transaction to @transaction when making a deposit' do
+    subject.deposit(10)
+    expect(subject.transaction).to include({credit: 10, balance: 10})
+  end
+
   it 'withdrawal by 2 decreases balance by 2' do
     subject.deposit(10)
     subject.withdrawal(2)
@@ -29,5 +34,11 @@ describe BankAccount do
     subject.withdrawal(1)
     subject.withdrawal(3)
     expect(subject.balance).to eq(6)
+  end
+
+  it 'adds a transaction to @transaction when making a withdrawal' do
+    subject.deposit(20)
+    subject.withdrawal(5)
+    expect(subject.transaction).to include({debit: 5, balance: 15})
   end
 end
