@@ -11,6 +11,11 @@ describe BankAccount do
     expect(subject.bank_statement).to be_an_instance_of(BankStatement)
   end
 
+  it 'returns the transaction' do
+    subject.deposit(50)
+    expect(subject.add_transaction_to_statement).to eq({credit: 50, balance: 50})
+  end
+
   describe '#deposit' do
     it 'depositing 1 increases balance by 1' do
       subject.deposit(1)
